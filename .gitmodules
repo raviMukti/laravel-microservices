@@ -7,3 +7,6 @@
 [submodule "mailhog"]
 	path = mailhog
 	url = /Users/chiyomori/WORK/PROJECT/TRAINING/laravel-microservices/mailhog
+[submodule "order-service"]
+	path = order-service
+	url = /Users/chiyomori/WORK/PROJECT/TRAINING/laravel-microservices/order-service
