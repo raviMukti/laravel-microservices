@@ -1,3 +1,9 @@
 [submodule "monolith"]
 	path = monolith
 	url = /Users/chiyomori/WORK/PROJECT/TRAINING/laravel-microservices/monolith
+[submodule "rabbitmq"]
+	path = rabbitmq
+	url = /Users/chiyomori/WORK/PROJECT/TRAINING/laravel-microservices/rabbitmq
+[submodule "mailhog"]
+	path = mailhog
+	url = /Users/chiyomori/WORK/PROJECT/TRAINING/laravel-microservices/mailhog
