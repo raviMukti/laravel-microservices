@@ -1,0 +1,255 @@
+{
+	"info": {
+		"_postman_id": "0c8552f3-9b9f-4f38-a042-bc3405ff38cb",
+		"name": "Laravel RabbitMQ",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "9682563",
+		"_collection_link": "https://integration-haistar.postman.co/workspace/Waizly~6f093005-a990-455a-8f6c-c862c07f52f5/collection/9682563-0c8552f3-9b9f-4f38-a042-bc3405ff38cb?action=share&source=collection_link&creator=9682563"
+	},
+	"item": [
+		{
+			"name": "Monolith",
+			"item": [
+				{
+					"name": "Create Order",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\" : \"abed@gmail.com\",\n    \"food_name\" : \"Bala - Bala\",\n    \"quantity\" : 1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{urlMonolith}}/api/orders",
+							"host": [
+								"{{urlMonolith}}"
+							],
+							"path": [
+								"api",
+								"orders"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Orders",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{urlMonolith}}/api/orders",
+							"host": [
+								"{{urlMonolith}}"
+							],
+							"path": [
+								"api",
+								"orders"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Confirm Order",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{urlMonolith}}/api/orders/confirm/1",
+							"host": [
+								"{{urlMonolith}}"
+							],
+							"path": [
+								"api",
+								"orders",
+								"confirm",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Deliveries",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{urlMonolith}}/api/orders/getDeliveries",
+							"host": [
+								"{{urlMonolith}}"
+							],
+							"path": [
+								"api",
+								"orders",
+								"getDeliveries"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Find Driver",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{urlMonolith}}/api/orders/findDriver",
+							"host": [
+								"{{urlMonolith}}"
+							],
+							"path": [
+								"api",
+								"orders",
+								"findDriver"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Order Service",
+			"item": [
+				{
+					"name": "Create Order",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\" : \"abed@gmail.com\",\n    \"food_name\" : \"Bala - Bala\",\n    \"quantity\" : 1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{urlOrder}}/api/orders",
+							"host": [
+								"{{urlOrder}}"
+							],
+							"path": [
+								"api",
+								"orders"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Orders",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{urlOrder}}/api/orders",
+							"host": [
+								"{{urlOrder}}"
+							],
+							"path": [
+								"api",
+								"orders"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Confirm Order",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{urlOrder}}/api/orders/confirm/1",
+							"host": [
+								"{{urlOrder}}"
+							],
+							"path": [
+								"api",
+								"orders",
+								"confirm",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Delivery Service",
+			"item": [
+				{
+					"name": "Get Deliveries",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{urlDelivery}}/api/orders/getDeliveries",
+							"host": [
+								"{{urlDelivery}}"
+							],
+							"path": [
+								"api",
+								"orders",
+								"getDeliveries"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "urlMonolith",
+			"value": "http://localhost:8000",
+			"type": "string"
+		},
+		{
+			"key": "urlOrder",
+			"value": "http://localhost:8002",
+			"type": "string"
+		},
+		{
+			"key": "urlDelivery",
+			"value": "http://localhost:8003",
+			"type": "string"
+		},
+		{
+			"key": "urlNotification",
+			"value": "http://localhost:8003",
+			"type": "string"
+		}
+	]
+}
