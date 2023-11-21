@@ -10,3 +10,6 @@
 [submodule "order-service"]
 	path = order-service
 	url = /Users/chiyomori/WORK/PROJECT/TRAINING/laravel-microservices/order-service
+[submodule "delivery-service"]
+	path = delivery-service
+	url = /Users/chiyomori/WORK/PROJECT/TRAINING/laravel-microservices/delivery-service
