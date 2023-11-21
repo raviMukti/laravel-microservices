@@ -2,6 +2,11 @@
 
 You can find the slides in this [link](https://docs.google.com/presentation/d/1cFIrFvHSPFOuZU33WBFsvw0w5KCuGcTe5IOsbS-r-As/edit?usp=sharing)
 
+## Clone this project
+```
+git clone --recursive https://github.com/raviMukti/laravel-microservices.git <your-prefer-project-name>
+```
+
 1. Monolith
     - How it works
         1. cd `/path-to-project/monolith`
