@@ -1,0 +1,3 @@
+[submodule "monolith"]
+	path = monolith
+	url = /Users/chiyomori/WORK/PROJECT/TRAINING/laravel-microservices/monolith
