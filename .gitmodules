@@ -1,15 +1,18 @@
 [submodule "monolith"]
 	path = monolith
-	url = /Users/chiyomori/WORK/PROJECT/TRAINING/laravel-microservices/monolith
+	url = https://github.com/raviMukti/laravel-monolith.git
 [submodule "rabbitmq"]
 	path = rabbitmq
-	url = /Users/chiyomori/WORK/PROJECT/TRAINING/laravel-microservices/rabbitmq
+	url = https://github.com/raviMukti/rabbitmq-laravel.git
 [submodule "mailhog"]
 	path = mailhog
-	url = /Users/chiyomori/WORK/PROJECT/TRAINING/laravel-microservices/mailhog
+	url = https://github.com/raviMukti/laravel-mailhog.git
 [submodule "order-service"]
 	path = order-service
-	url = /Users/chiyomori/WORK/PROJECT/TRAINING/laravel-microservices/order-service
+	url = https://github.com/raviMukti/laravel-order-service.git
 [submodule "delivery-service"]
 	path = delivery-service
-	url = /Users/chiyomori/WORK/PROJECT/TRAINING/laravel-microservices/delivery-service
+	url = https://github.com/raviMukti/laravel-delivery-service.git
+[submodule "notification-service"]
+	path = notification-service
+	url = https://github.com/raviMukti/laravel-notification-service.git
